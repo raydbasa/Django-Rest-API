@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home - Blog Website
+{% endblock %}
+
+{% block content %}
+    <h2>Welcome to Blog Website</h2>
+    <p>Explore our content:</p>
+    <ul>
+        <li><a href="{% url 'users' %}">Users</a></li>
+        <li><a href="{% url 'blogs' %}">Blogs</a></li>
+        <li><a href="{% url 'comments' %}">Comments</a></li>
+        <li><a href="{% url 'categories' %}">Categories</a></li>
+    </ul>
+{% endblock %}
